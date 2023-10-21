@@ -1,0 +1,35 @@
+Explain the z-index, with a code example.
+
+= The z-index property in CSS is used to control the stacking order of elements on a web page along the z-axis (the axis that extends from the screen towards you). Elements with higher z-index values will appear on top of elements with lower z-index values. This property is commonly used when you have overlapping elements and need to control their relative visibility.
+
+Here is code example
+-
+<html>
+<head>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+    }
+
+    #box1 {
+      background-color: red;
+      left: 50px;
+      top: 50px;
+      z-index: 1; /* This box will be behind box2 */
+    }
+
+    #box2 {
+      background-color: blue;
+      left: 75px;
+      top: 75px;
+      z-index: 2; /* This box will be on top of box1 */
+    }
+  </style>
+</head>
+<body>
+  <div class="box" id="box1"></div>
+  <div class="box" id="box2"></div>
+</body>
+</html>

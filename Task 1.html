@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_1</title>
+    <style>
+        .container {
+  position: relative;
+  
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+#boxA {
+  top: 200px;
+  left: 200px;
+}
+
+#boxB {
+  top: calc(200px - 30px);
+  left: calc(200px - 30px);
+}
+
+#boxC {
+  top: calc(200px - 30px);
+  left: calc(200px + 30px);
+}
+
+#boxD {
+  top: calc(200px + 30px);
+  left: calc(200px - 30px);
+}
+
+#boxE {
+  top: calc(200px + 30px);
+  left: calc(200px + 30px);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="box" id="boxA">A</div>
+      <div class="box" id="boxB">B</div>
+      <div class="box" id="boxC">C</div>
+      <div class="box" id="boxD">D</div>
+      <div class="box" id="boxE">E</div>
+    </div>
+  </body>
+</html>
